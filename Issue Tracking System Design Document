@@ -1,0 +1,44 @@
+Issue Tracking System Alpha Version
+
+Team Members
+Allexa Hernandez
+Timofei Kalinin
+Jaime Gonzalez
+Roy Sanchez
+
+Description and high level functionality
+Report issues and store them
+Track list of issues reported
+Track their status of completion
+Track and sort by priority/severity
+Search through issues reported using specific attributes(stretch goal)
+
+Design
+User Input
+Priority Queue Container
+File/Database 
+MySQL
+SQL (Storing Data, C++ Code read and written to program)
+Issue Class Object
+Issue: what is it?
+Issue ID
+Issue type(Stretch goal)
+Description
+Priority
+Completion status: new, inprogress, completed
+Display specific issues Method
+Issue name?
+Issue ID
+issues greater than a certain priority
+Issue type
+Completion status
+Update Issue Method
+Priority
+Issue status
+
+
+Pitfalls
+Time management
+Communication Issues
+Confusion of project outcome 
+Scope is too big
