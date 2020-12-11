@@ -84,10 +84,51 @@ void createIssueMap(int id, string name, string descrip, string status, string p
 }
 
 void displayAllIssues(){
+    cout << endl;
     for(auto x : issueMap) {
     x.second.displayIssue();
     cout << endl;
     }
+}
+
+void issueMenu(){
+    string input;
+    string input2;
+
+    cout << "---Main Menu---" << endl;
+    cout << "Enter 1-3 to select an option or 0 to exit" << endl;
+    cout << "1: Display all issues" << endl;
+    cout << "2: Display specific issue" << endl;
+    cout << "3: Create an issue report" << endl;
+    
+    cin >> input;
+    cin.ignore();
+    
+    if(input == "0")
+        return;
+    else if(input == "1")
+        displayAllIssues();
+    else if(input == "2")
+        displaySpecificIssue();
+    else if(input == "3")
+        createIssuesFile();
+    else {
+        cout << "Invalid entry try again" << endl;
+        cout << endl;
+        issueMenu();
+        return;
+    }
+
+    cout << "Anything else? y/n" << endl;
+    getline(cin, input2);
+
+    if(input2 == "y")
+        issueMenu();
+    else if(input2 == "yes")
+        issueMenu();
+    else
+        cout << "Bye Bye" << endl;
+        return;
 }
 
 /*------Allexa's Code-------*/

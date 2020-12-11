@@ -7,9 +7,7 @@ using namespace std;
 
 int main(){
     srand((unsigned) time(0));
-    createIssuesFile();
-    displayAllIssues();
-    displaySpecificIssue();
+    issueMenu();
     return 0;
 }
 

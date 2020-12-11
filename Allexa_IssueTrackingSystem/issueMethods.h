@@ -9,6 +9,7 @@ void createIssueMap(int, string, string, string, string);
 void displayAllIssues();
 void createIssuesFile();
 void displaySpecificIssue();
+void issueMenu();
 
 //TODO
 //void appendIssueToFile();
